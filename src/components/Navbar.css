@@ -22,3 +22,16 @@
     border-radius: 4px;
     border: none;
 }
+#navbar form button {
+    background-color:  #f7d354;
+    border: 2 px solid #f7d354;
+    border-radius: 6px;
+    color: #000;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+
+
+}
