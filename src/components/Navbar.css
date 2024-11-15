@@ -32,6 +32,10 @@
     display: flex;
     font-size: 1.3rem;
     align-items: center;
-
-
+    transition:  .7s;
+}
+#navbar form button:hover{
+    color: #f7d354;
+    background-color: transparent;
+    border: 2px solid #f7d354;
 }
