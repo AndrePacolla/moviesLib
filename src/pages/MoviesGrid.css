@@ -17,3 +17,18 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.movies-container div{
+    display: flex;
+    padding: 16px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: space-between ;
+    width: 30%;
+    color: #fff;
+    background-color: #111;
+}
+.movies-container div img {
+    max-width: 100%;
+}
+
