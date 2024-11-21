@@ -12,13 +12,10 @@ const Navbar = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-
+      
       navigate(`/search?q=${search}`);
       setSearch("");
     }
-
-
-
 
     return(  
       <nav id="navbar">
