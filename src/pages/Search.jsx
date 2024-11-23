@@ -8,7 +8,12 @@ const apiKey = import.meta.env.VITE_API_KEY;
 import "./MoviesGrid.css"
 
 const Search = () => {
-    
+
+    const [searchParams] = useSearchParams();
+
+    const [movies, setMovies] = useState([]);
+    const query = searchParams.length("q")
+
 
     return (
         <div className="container">
