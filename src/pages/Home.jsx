@@ -25,9 +25,8 @@ const Home = () => {
         getTopRatedMovies(topRateUrl);
 
 
-    }, [])
+    }, []);
 
-   
     return (
         <div className="container">
 
