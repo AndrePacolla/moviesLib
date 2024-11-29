@@ -23,8 +23,6 @@ const Home = () => {
         const topRateUrl =`${moviesURL}top_rated?${apiKey}`;
 
         getTopRatedMovies(topRateUrl);
-
-
     }, []);
 
     return (
