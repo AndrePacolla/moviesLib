@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import {
-    BsGgrapUp,
+    BsGraphUp,
     BsWallet2,
-    BsHoursglassSplit,
-    BsFillFilEarmarkTextFill 
+    BsHourglassSplit,
+    BsFillFileEarmarkTextFill 
 } from "react-icons/bs";
 
 import MovieCard from "../components/MovieCard";
@@ -20,19 +20,19 @@ const Movie = () => {
     const [movie, setMovie] = useState(null);
 
     const getMovie = async(url) => {
-
         const res = await fetch(url);
         const data = await res.json();
 
-        setMovie(data.results);
+        setMovie(data);
     }    
 
-
-    return (
-        <div>
-            MOVIE
-        </div>
-    ) 
+    useEffect(() => {
+        const movieUrl = `${moviesURL}${id}?${apiKey}`
+        getMovie(movieUrl) 
+        
+    }, [])
+    
+    return <div>{movie && <>{movie.title}</>}</div>
 }
 
 export default Movie;
