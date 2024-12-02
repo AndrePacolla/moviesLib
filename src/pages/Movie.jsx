@@ -32,7 +32,23 @@ const Movie = () => {
         
     }, [])
     
-    return <div>{movie && <>{movie.title}</>}</div>
+    return ( 
+     <div className="movie-page">
+        {movie && ( 
+          <>
+              <MovieCard movie={movie} showLink={false}/>
+              <p className="tagline">{movie.tagline}</p>
+              <div className="info">
+                <h3>
+                    <BsWallet2/>Orçamento
+                </h3>
+                <p>{movie.budget}</p>
+
+              </div>
+          </>
+        )}
+    </div>   
+    );   
 }
 
 export default Movie;
